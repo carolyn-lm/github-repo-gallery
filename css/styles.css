@@ -2,13 +2,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color1: #58a4b0;
+    --color2: #6d5a72;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    background-color: #fbf9de;
+    background-color: floralwhite;
     color: #333;
     font-size: 16px;
 }
@@ -27,7 +32,7 @@ body {
 }
 
 .fa-github-alt {
-    color: #f86d58;
+    color: var(--color2);
 }
 
 img {
@@ -42,7 +47,7 @@ h1 {
     font-size: 3.5em;
     text-align: center;
     font-family: "Oswald", sans-serif;
-    background-color: #483978;
+    background-color: var(--color1);
     color: #fff;
     text-transform: uppercase;
     border-top-left-radius: 20px;
@@ -64,7 +69,7 @@ h1 {
 .circle {
     width: 20px;
     height: 20px;
-    background-color: #483978;
+    background-color: var(--color1);
     border-radius: 100%;
     z-index: 99;
     align-self: center;
@@ -80,7 +85,7 @@ h1 {
 h3 {
     width: 100%;
     text-align: center;
-    color: #f86d58;
+    color: var(--color2);
 }
 
 ul {
@@ -107,7 +112,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #483978;
+    background-color: var(--color1);
     color: white;
     font-size: 18px;
     padding-bottom: 2em;
@@ -144,7 +149,7 @@ ul {
     margin-top: 1em;
     padding: 1em;
     margin-bottom: 1em;
-    border: 2px solid #483978;
+    border: 2px solid var(--color1);
 }
 
 section.repo-data {
@@ -173,7 +178,7 @@ section.repo-data {
 .repo-list li {
     width: 90%;
     margin: 1em 0;
-    border: 1px solid #f86d58;
+    border: 1px solid var(--color2);
     padding: 0.5em;
 }
 
@@ -209,8 +214,8 @@ section.repo-data {
     margin-top: 2em;
     cursor: pointer;
     display: block;
-    background-color: #483978;
-    border: 1px solid #483978;
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
 }
 
 .repo-data .visit:hover {

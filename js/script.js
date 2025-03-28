@@ -109,7 +109,7 @@ const displayRepoData = function (repoInfo, languages) {
     const repoDiv = document.createElement("div");
     repoDiv.innerHTML = `
             <h3>Name: ${repoInfo.name}</h3>
-            <p>Description: ${repoInfo.description}</p>
+            <p>Description: ${repoInfo.description ? repoInfo.description : ""}</p>
             <p>Default Branch: ${repoInfo.default_branch}</p>
             <p>Languages: ${languages.join(", ")}</p>
             <a class="visit" href="${repoInfo.html_url}" target="_blank" rel="noreferrer noopener">View Repo on GitHub!</a>
